@@ -113,6 +113,7 @@ n_of_fail=len(filtered[filtered['Outcome'].str.contains('Failed')])
 print("No of Failed cases:",n_of_fail)
 n_of_incomplete=len(filtered[filtered['Outcome'].str.contains('Incomplete')])
 print("No of Incomplete cases:",n_of_incomplete)   
+#yield report                      
 yield_pass= (n_of_pass/(n_of_pass+n_of_fail+n_of_incomplete))*100                     
 print("(Yield)percentage of Passed cases out of all tested:", yield_pass,"%")                      
 filtered 
